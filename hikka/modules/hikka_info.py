@@ -140,7 +140,7 @@ class HikkaInfoMod(loader.Module):
         )
 
     @loader.inline_handler(
-        thumb_url="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/SodaUB.png"
+        thumb_url="https://imgur.com/nZXoaMq"
     )
     @loader.inline_everyone
     async def info(self, _: InlineQuery) -> dict:
@@ -155,7 +155,7 @@ class HikkaInfoMod(loader.Module):
                 else {"message": self._render_info(True)}
             ),
             "thumb": (
-                "https://github.com/hikariatama/Hikka/raw/master/assets/hikka_pfp.png"
+                "https://imgur.com/nZXoaMq"
             ),
             "reply_markup": self._get_mark(),
         }
