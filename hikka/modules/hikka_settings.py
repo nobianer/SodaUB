@@ -39,7 +39,7 @@ ALL_INVOKES = [
 
 @loader.tds
 class HikkaSettingsMod(loader.Module):
-    """Advanced settings for Hikka Userbot"""
+    """Advanced settings for Soda Userbot"""
 
     strings = {"name": "SodaSettings"}
 
@@ -78,7 +78,7 @@ class HikkaSettingsMod(loader.Module):
             if (
                 dialog.name
                 in {
-                    "sodaa-logs",
+                    "soda-logs",
                     "soda-onload",
                     "soda-assets",
                     "soda-backups",
