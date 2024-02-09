@@ -40,7 +40,7 @@ class Translations(loader.Module):
             "🥟": "<emoji document_id=5382337996123020810>🥟</emoji>",
         }
 
-        lang2country = {"en": "🇬🇧", "tt": "🥟", "kk": "🇰🇿"}
+        lang2country = {"en": "🇬🇧", "uk": "🇺🇦", "tt": "🥟", "kk": "🇰🇿"}
 
         lang = lang2country.get(lang) or utils.get_lang_flag(lang)
         return emoji_flags.get(lang, lang)
