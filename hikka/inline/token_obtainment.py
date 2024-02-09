@@ -46,13 +46,13 @@ class TokenObtainment(InlineUnit):
                     pass
                 else:
                     uid = utils.rand(6)
-                    username = f"@hikka_{uid}_bot"
+                    username = f"@soda_{uid}_bot"
             else:
                 uid = utils.rand(6)
-                username = f"@hikka_{uid}_bot"
+                username = f"@soda_{uid}_bot"
 
             for msg in [
-                f"🌘 Hikka Userbot of {self._name}"[:64],
+                f"🌘 Soda Userbot of {self._name}"[:64],
                 username,
                 "/setuserpic",
                 username,
