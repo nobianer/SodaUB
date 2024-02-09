@@ -49,7 +49,7 @@ class CoreMod(loader.Module):
     async def sodacmd(self, message: Message):
         await utils.answer_file(
             message,
-            "https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/Nig.png",
+            "https://imgur.com/nZXoaMq",
             self.strings("hikka").format(
                 (
                     utils.get_platform_emoji()
