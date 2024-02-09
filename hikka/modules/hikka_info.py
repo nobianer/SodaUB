@@ -35,7 +35,7 @@ class HikkaInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/hikariatama/assets/raw/master/hikka_banner.mp4",
+                "https://raw.githubusercontent.com/psleiny/SodaLEiNY/main/Images/Nig.png",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
@@ -140,7 +140,7 @@ class HikkaInfoMod(loader.Module):
         )
 
     @loader.inline_handler(
-        thumb_url="https://imgur.com/nZXoaMq"
+        thumb_url="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/SodaUB.png"
     )
     @loader.inline_everyone
     async def info(self, _: InlineQuery) -> dict:
@@ -155,7 +155,7 @@ class HikkaInfoMod(loader.Module):
                 else {"message": self._render_info(True)}
             ),
             "thumb": (
-                "https://imgur.com/nZXoaMq"
+                "https://github.com/hikariatama/Hikka/raw/master/assets/hikka_pfp.png"
             ),
             "reply_markup": self._get_mark(),
         }
