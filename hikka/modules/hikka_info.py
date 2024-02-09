@@ -78,7 +78,7 @@ class HikkaInfoMod(loader.Module):
 
         return (
             (
-                "<b>🌘 Hikka</b>\n"
+                "<b>🌘 Soda Userbot</b>\n"
                 if "hikka" not in self.config["custom_message"].lower()
                 else ""
             )
@@ -140,7 +140,7 @@ class HikkaInfoMod(loader.Module):
         )
 
     @loader.inline_handler(
-        thumb_url="https://img.icons8.com/external-others-inmotus-design/344/external-Moon-round-icons-others-inmotus-design-2.png"
+        thumb_url="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/SodaUB.png"
     )
     @loader.inline_everyone
     async def info(self, _: InlineQuery) -> dict:
@@ -181,7 +181,7 @@ class HikkaInfoMod(loader.Module):
             )
 
     @loader.command()
-    async def hikkainfo(self, message: Message):
+    async def sodainfo(self, message: Message):
         await utils.answer(message, self.strings("desc"))
 
     @loader.command()
