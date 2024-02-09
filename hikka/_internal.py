@@ -50,8 +50,8 @@ def restart():
 
     print("🔄 Restarting...")
 
-    if "LAVHOST" in os.environ:
-        os.system("lavhost restart")
+    if "Ubuntu" in os.environ:
+        os.system("Ubuntu restart")
         return
 
     os.environ["HIKKA_DO_NOT_RESTART"] = "1"
