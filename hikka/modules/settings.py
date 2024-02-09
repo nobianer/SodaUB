@@ -46,10 +46,10 @@ class CoreMod(loader.Module):
         return f"{str(chatid)}.{module}" if module else chatid
 
     @loader.command()
-    async def hikkacmd(self, message: Message):
+    async def sodacmd(self, message: Message):
         await utils.answer_file(
             message,
-            "https://github.com/hikariatama/assets/raw/master/hikka_cat_banner.mp4",
+            "https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/Nig.png",
             self.strings("hikka").format(
                 (
                     utils.get_platform_emoji()
