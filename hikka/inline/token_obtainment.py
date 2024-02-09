@@ -46,13 +46,13 @@ class TokenObtainment(InlineUnit):
                     pass
                 else:
                     uid = utils.rand(6)
-                    username = f"@hikka_{uid}_bot"
+                    username = f"@soda_{uid}_bot"
             else:
                 uid = utils.rand(6)
-                username = f"@hikka_{uid}_bot"
+                username = f"@soda_{uid}_bot"
 
             for msg in [
-                f"🌘 Hikka Userbot of {self._name}"[:64],
+                f"🌘 Soda Userbot of {self._name}"[:64],
                 username,
                 "/setuserpic",
                 username,
@@ -149,7 +149,7 @@ class TokenObtainment(InlineUnit):
                         "hikka.inline",
                         "custom_bot",
                         False,
-                    ) and not re.search(r"@hikka_[0-9a-zA-Z]{6}_bot", button.text):
+                    ) and not re.search(r"@soda_[0-9a-zA-Z]{6}_bot", button.text):
                         continue
 
                     await fw_protect()
@@ -199,7 +199,7 @@ class TokenObtainment(InlineUnit):
                     for msg in [
                         "/setinline",
                         button.text,
-                        "user@hikka:~$",
+                        "user@soda:~$",
                         "/setinlinefeedback",
                         button.text,
                         "Enabled",
