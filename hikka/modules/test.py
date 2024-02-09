@@ -367,11 +367,11 @@ class TestMod(loader.Module):
     async def client_ready(self):
         chat, _ = await utils.asset_channel(
             self._client,
-            "hikka-logs",
-            "🌘 Your Hikka logs will appear in this chat",
+            "soda-logs",
+            "🌘 Your Soda Userbot logs will appear in this chat",
             silent=True,
             invite_bot=True,
-            avatar="https://github.com/hikariatama/assets/raw/master/hikka-logs.png",
+            avatar="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/Logs.png",
         )
 
         self.logchat = int(f"-100{chat.id}")
