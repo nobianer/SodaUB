@@ -41,7 +41,7 @@ ALL_INVOKES = [
 class HikkaSettingsMod(loader.Module):
     """Advanced settings for Hikka Userbot"""
 
-    strings = {"name": "HikkaSettings"}
+    strings = {"name": "SodaSettings"}
 
     def get_watchers(self) -> tuple:
         return [
@@ -78,11 +78,11 @@ class HikkaSettingsMod(loader.Module):
             if (
                 dialog.name
                 in {
-                    "hikka-logs",
-                    "hikka-onload",
-                    "hikka-assets",
-                    "hikka-backups",
-                    "hikka-acc-switcher",
+                    "sodaa-logs",
+                    "soda-onload",
+                    "soda-assets",
+                    "soda-backups",
+                    "soda-acc-switcher",
                     "silent-tags",
                 }
                 and dialog.is_channel
