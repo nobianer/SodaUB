@@ -33,7 +33,7 @@ class HikkaBackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self.tg_id,
-                photo="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/BackUps.png",
+                photo="https://imgur.com/CzuqH3P",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
@@ -65,7 +65,7 @@ class HikkaBackupMod(loader.Module):
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/BackUps.png",
+            avatar="https://imgur.com/CzuqH3P",
             _folder="hikka",
         )
 
