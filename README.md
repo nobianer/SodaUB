@@ -18,4 +18,5 @@ Ya sosal menya ebali
 
 <ul>
     <li><a href="https://github.com/psleiny">LEINY</a> Графический пидорас</li>
+    <li><a href="https://github.com/nobianer">nobianer</a> Кодер говна</li>
 </ul>
