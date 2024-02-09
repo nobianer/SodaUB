@@ -23,15 +23,7 @@ yaml = YAML(typ="safe")
 PACKS = Path(__file__).parent / "langpacks"
 SUPPORTED_LANGUAGES = {
     "en": "🇬🇧 English",
-    "ua": "🇺🇦 Українська",
-    "fr": "🇫🇷 Français",
-    "it": "🇮🇹 Italiano",
-    "de": "🇩🇪 Deutsch",
-    "tr": "🇹🇷 Türkçe",
-    "uz": "🇺🇿 O'zbekcha",
-    "es": "🇪🇸 Español",
-    "kk": "🇰🇿 Қазақша",
-    "tt": "🥟 Татарча",
+    "ua": "🇺🇦 Українська"
 }
 
 
