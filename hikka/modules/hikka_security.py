@@ -36,7 +36,7 @@ from ..security import (
 class HikkaSecurityMod(loader.Module):
     """Control security settings"""
 
-    strings = {"name": "HikkaSecurity"}
+    strings = {"name": "SodaSecurity"}
 
     async def client_ready(self):
         self._sgroups: typing.Iterable[str, SecurityGroup] = self.pointer(
