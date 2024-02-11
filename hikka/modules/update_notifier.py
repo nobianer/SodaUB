@@ -15,7 +15,7 @@ from ..inline.types import InlineCall
 
 @loader.tds
 class UpdateNotifier(loader.Module):
-    """Tracks latest Hikka releases, and notifies you, if update is required"""
+    """Tracks latest Soda releases, and notifies you, if update is required"""
 
     strings = {"name": "UpdateNotifier"}
 
