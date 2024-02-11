@@ -131,7 +131,7 @@ class HikkaBackupMod(loader.Module):
         except loader.StopLoop:
             raise
         except Exception:
-            logger.exception("HikkaBackup failed")
+            logger.exception("SodaBackup failed")
             await asyncio.sleep(60)
 
     @loader.command()
