@@ -6,15 +6,15 @@
 <br>
 <h2>📱 Termux:</h2>
 <b>Ввести команду:</b><br>
-<code>apt update && apt upgrade && apt install git && git clone https://github.com/nobianer/SodaUserbot && cd SodaUserbot && pip install -r requirements.txt && python3 -m hikka</code><br.>
+<code>pkg update && pkg upgrade && pkg install git && git clone https://github.com/nobianer/SodaUserbot && cd SodaUserbot && pip install -r requirements.txt && python3 -m hikka</code><br.>
 <i>Рекомендуется в команде python3 -m hikka приписывать <code>--no-web</code>, так как Termux может не вывести веб-интерфейс</i><br>
-<h2 border="none"> Зависимости</h2>
+<h2 border="none">⚙ Зависимости</h2>
 <ul>
  <li>Python 3.8+</li>
  <li>API_ID and HASH from <a href="https://my.telegram.org/apps" color="#2594cb">Telegram</a></li>
 </ul>
 <hr>
-<h2 border="none"> Документация</h2>
+<h2 border="none">📚 Документация</h2>
 
 Ya sosal menya ebali
 
