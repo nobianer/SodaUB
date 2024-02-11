@@ -65,7 +65,7 @@ class HikkaBackupMod(loader.Module):
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://imgur.com/CzuqH3P",
+            avatar="https://i.imgur.com/CzuqH3P.png",
             _folder="hikka",
         )
 
