@@ -83,7 +83,7 @@ PRESETS = {
 
 @loader.tds
 class Presets(loader.Module):
-    """Suggests new Hikka users a packs of modules to load"""
+    """Suggests new Soda Userbot users a packs of modules to load"""
 
     strings = {"name": "Presets"}
 
