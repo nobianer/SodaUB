@@ -4,6 +4,10 @@
 <code>sudo apt update && sudo apt upgrade -y && sudo apt install git -y && git clone https://github.com/nobianer/SodaUserbot && cd SodaUserbot && pip install -r requirements.txt && python3 -m hikka</code><br.>
 <i>If you are on VPS\VDS, type <code>--proxy-pass</code> in the end of command to open SSH tunnel to your Soda web interface, or use <code>--no-web</code> to complete setup in console</i><br>
 <br>
+<h2>Termux:</h2>
+<b>Ввести команду:</b><br>
+<code>apt update && apt upgrade && apt install git && git clone https://github.com/nobianer/SodaUserbot && cd SodaUserbot && pip install -r requirements.txt && python3 -m hikka</code><br.>
+<i>Рекомендуется в команде python3 -m hikka приписывать --no-web, так как Termux может не вывести веб-интерфейс</i><br>
 <h2 border="none"> Зависимости</h2>
 <ul>
  <li>Python 3.8+</li>
