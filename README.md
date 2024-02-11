@@ -1,4 +1,4 @@
-### Как установить
+### Установка
 <h2>👾 Linux</h2>
 <b>Ввести команду в терминал:</b><br>
 <code>sudo apt update && sudo apt upgrade -y && sudo apt install git -y && git clone https://github.com/nobianer/SodaUserbot && cd SodaUserbot && pip install -r requirements.txt && python3 -m hikka</code><br.>
