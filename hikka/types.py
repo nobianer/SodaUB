@@ -672,6 +672,7 @@ class DragonModule:
 
     # fmt: off
     strings_ru = {"_cls_doc": "Модуль запущен в режиме совместимости с Dragon, поэтому он может быть нестабильным"}
+    strings_ua = {"_cls_doc": "Модуль запущено в режимі сумісності з Dragon, тому він може бути нестабільним"}
     strings_de = {"_cls_doc": "Das Modul wird im Dragon-Kompatibilitäts modus ausgeführt, daher kann es instabil sein"}
     strings_tr = {"_cls_doc": "Modül Dragon uyumluluğu modunda çalıştığı için istikrarsız olabilir"}
     strings_uz = {"_cls_doc": "Modul Dragon muvofiqligi rejimida ishlamoqda, shuning uchun u beqaror bo'lishi mumkin"}
