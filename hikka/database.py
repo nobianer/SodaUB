@@ -117,7 +117,7 @@ class Database(dict):
                 "soda-assets",
                 "🌆 Your Soda Userbot assets will be stored here",
                 archive=True,
-                avatar="https://imgur.com/bSQc6Q8.png",
+                avatar="https://i.imgur.com/bSQc6Q8.png",
             )
         except ChannelsTooMuchError:
             self._assets = None
