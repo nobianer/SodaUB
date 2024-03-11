@@ -27,7 +27,7 @@ soda_security:
     enable_nonick_btn: "🔰 Ввімкнути"
     owner_added: '<emoji document_id="5386399931378440814">😎</emoji> <b><a href="tg://user?id={}">{}</a> додано до групи</b> <code>owner</code>'
     owner_removed: '<emoji document_id="5386399931378440814">😎</emoji> <b><a href="tg://user?id={}">{}</a> вилучено з групи</b> <code>owner</code>'
-    _cls_doc: "Управление настройками безопасности"
+    _cls_doc: "Керування налаштуваннями безпеки"
     what: "<emoji document_id=5210952531676504517>🚫</emoji> <b>Вам потрібно вказати тип цілі першим аргументом (</b><code>user</code> <b>or</b> <code>chat</code><b>)</b>"
     no_target: "<emoji document_id=5210952531676504517>🚫</emoji> <b>Не вказана ціль правила безпеки</b>"
     no_rule: "<emoji document_id=5210952531676504517>🚫</emoji> <b>Не вказане правило безпеки (модуль або команда)</b>"
