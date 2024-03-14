@@ -151,15 +151,6 @@ class CoreMod(loader.Module):
             await utils.answer(message, self.strings("prefix_incorrect"))
             return
 
-        if (
-            not is_dragon
-            and args[0] == self._db.get("dragon.prefix", "command_prefix", ",")
-            or is_dragon
-            and args[0] == self._db.get(main.__name__, "command_prefix", ".")
-        ):
-            await utils.answer(message, self.strings("prefix_collision"))
-            return
-
         oldprefix = (
             f"dragon {utils.escape_html(self.get_prefix('dragon'))}"
             if is_dragon
