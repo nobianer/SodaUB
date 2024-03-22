@@ -374,7 +374,7 @@ class Help(loader.Module):
                 (
                     utils.get_platform_emoji()
                     if self._client.hikka_me.premium and CUSTOM_EMOJIS
-                    else "🌘"
+                    else "🥤"
                 )
             ),
         )
