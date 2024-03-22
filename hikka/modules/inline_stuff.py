@@ -33,7 +33,7 @@ class InlineStuff(loader.Module):
 
         await message.delete()
 
-        m = await message.respond("🌘", reply_to=utils.get_topic(message))
+        m = await message.respond("🥤", reply_to=utils.get_topic(message))
 
         await self.inline.gallery(
             message=m,
