@@ -220,7 +220,7 @@ presets:
     back: "🔙 Back"
     install: "📦 Install"
     installing: "<emoji document_id=5451732530048802485>⏳</emoji> <b>Installing preset</b> <code>{}</code><b>...</b>"
-    installing_module: "<emoji document_id=5451732530048802485>⏳</emoji> <b>Installing preset</b> <code>{}</code> <b>({}/{} modules)...</b>\n\n<emoji document_id=5188377234380954537>🌘</emoji> <i>Installing module {}...</i>"
+    installing_module: "<emoji document_id=5451732530048802485>⏳</emoji> <b>Installing preset</b> <code>{}</code> <b>({}/{} modules)...</b>\n\n<emoji document_id=5370775909802449577>🥤</emoji> <i>Installing module {}...</i>"
     installed: "<emoji document_id=5436040291507247633>🎉</emoji> <b>Preset</b> <code>{}</code> <b>installed!</b>"
     already_installed: "✅ [Installed]"
     _cls_doc: "Suggests new Soda users a packs of modules to load"
