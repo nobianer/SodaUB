@@ -52,7 +52,7 @@ class TokenObtainment(InlineUnit):
                 username = f"@soda_{uid}_bot"
 
             for msg in [
-                f"🌘 Soda Userbot of {self._name}"[:64],
+                f"🥤 Soda UB of {self._name}"[:64],
                 username,
                 "/setuserpic",
                 username,
