@@ -22,13 +22,13 @@ class Help(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "core_emoji",
-                "▪️",
+                "🟦",
                 lambda: "Core module bullet",
                 validator=loader.validators.Emoji(length=1),
             ),
             loader.ConfigValue(
                 "plain_emoji",
-                "▫️",
+                "🟨",
                 lambda: "Plain module bullet",
                 validator=loader.validators.Emoji(length=1),
             ),
@@ -140,7 +140,7 @@ class Help(loader.Module):
             (
                 DRAGON_EMOJI
                 if is_dragon
-                else "<emoji document_id=5188377234380954537>🌘</emoji>"
+                else "<emoji document_id=5370775909802449577>🥤</emoji>"
             ),
             _name,
         )
