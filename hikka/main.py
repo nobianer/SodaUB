@@ -772,7 +772,7 @@ class Hikka:
                     else ""
                 )
                 logging.debug(
-                    "\n🌘 Soda Userbot %s #%s (%s) started\n%s",
+                    "\n🥤 Soda Userbot %s #%s (%s) started\n%s",
                     ".".join(list(map(str, list(__version__)))),
                     build[:7],
                     upd,
@@ -784,7 +784,7 @@ class Hikka:
                 logging.getLogger().handlers[0].get_logid_by_client(client.tg_id),
                 "https://github.com/hikariatama/assets/raw/master/hikka_banner.mp4",
                 caption=(
-                    "🌘 <b>Soda Userbot {} started!</b>\n\n🌳 <b>GitHub commit SHA: <a"
+                    "🥤 <b>Soda Userbot {} started!</b>\n\n🌳 <b>GitHub commit SHA: <a"
                     ' href="https://github.com/hikariatama/Hikka/commit/{}">{}</a></b>\n✊'
                     " <b>Update status: {}</b>\n<b>{}</b>".format(
                         ".".join(list(map(str, list(__version__)))),
