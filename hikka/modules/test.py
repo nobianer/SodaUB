@@ -365,7 +365,7 @@ class TestMod(loader.Module):
             "🥤 Your Soda Userbot logs will appear in this chat",
             silent=True,
             invite_bot=True,
-            avatar="https://i.imgur.com/yEv3dYM.png",
+            avatar="https://raw.githubusercontent.com/psleiny/SodaLEiNY/main/Images/photo_2024-03-24_15-39-17.jpg",
         )
 
         self.logchat = int(f"-100{chat.id}")
