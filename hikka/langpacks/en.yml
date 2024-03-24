@@ -427,7 +427,7 @@ help:
     all_header: "<emoji document_id=5370775909802449577>🥤</emoji>> <b>{} mods available, {} hidden:</b>"
     no_mod: "🚫 <b>Specify module to hide</b>"
     hidden_shown: "<emoji document_id=5370775909802449577>🥤</emoji> <b>{} modules hidden, {} modules shown:</b>\n{}\n{}"
-    support: "{} <b>Link to</b> <a href='https://t.me/hikka_talks'>support chat</a></b>"
+    support: "{} <b>Link to</b> <a href='https://t.me/+PNIAg56NK5s4YjIy'>support chat</a></b>"
     partial_load: "<emoji document_id=5974193375799152241>ℹ️</emoji> <b>Userbot is not fully loaded, so not all modules are shown</b>"
     not_exact: "<emoji document_id=5974193375799152241>ℹ️</emoji> <b>No exact match occured, so the closest result is shown instead</b>"
     request_join: "You requested link for Soda support chat"
