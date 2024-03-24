@@ -343,7 +343,7 @@ class TestMod(loader.Module):
     @loader.command()
     async def ping(self, message: Message):
         start = time.perf_counter_ns()
-        message = await utils.answer(message, "🌘")
+        message = await utils.answer(message, "🥤")
 
         await utils.answer(
             message,
@@ -362,10 +362,10 @@ class TestMod(loader.Module):
         chat, _ = await utils.asset_channel(
             self._client,
             "soda-logs",
-            "🌘 Your Soda Userbot logs will appear in this chat",
+            "🥤 Your Soda Userbot logs will appear in this chat",
             silent=True,
             invite_bot=True,
-            avatar="https://github.com/nobianer/nob1aner/blob/main/assets/raw/master/Logs.png",
+            avatar="https://i.imgur.com/yEv3dYM.png",
         )
 
         self.logchat = int(f"-100{chat.id}")
