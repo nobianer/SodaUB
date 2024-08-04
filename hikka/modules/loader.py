@@ -63,7 +63,7 @@ class LoaderMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "MODULES_REPO",
-                "https://mods.hikariatama.ru",
+                "https://github.com/psleiny/SodaLEiNY/raw/main/Modules/",
                 lambda: self.strings("repo_config_doc"),
                 validator=loader.validators.Link(),
             ),
@@ -71,9 +71,8 @@ class LoaderMod(loader.Module):
                 "ADDITIONAL_REPOS",
                 # Currenly the trusted developers are specified
                 [
-                    "https://github.com/hikariatama/host/raw/master",
-                    "https://github.com/MoriSummerz/ftg-mods/raw/main",
-                    "https://gitlab.com/CakesTwix/friendly-userbot-modules/-/raw/master",
+                    "https://github.com/nobianer/Userbots-modules-UA/raw/main/modules",
+                    "https://github.com/C0dwiz/H.Modules/raw/main",
                 ],
                 lambda: self.strings("add_repo_config_doc"),
                 validator=loader.validators.Series(validator=loader.validators.Link()),
