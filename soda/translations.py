@@ -33,7 +33,7 @@ class BaseTranslator:
     def _get_pack_content(
         self,
         pack: Path,
-        prefix: str = "soda.modules.",
+        prefix: str = "hikka.modules.",
     ) -> typing.Optional[dict]:
         return self._get_pack_raw(pack.read_text(), pack.suffix, prefix)
 
@@ -41,7 +41,7 @@ class BaseTranslator:
         self,
         content: str,
         suffix: str,
-        prefix: str = "soda.modules.",
+        prefix: str = "hikka.modules.",
     ) -> typing.Optional[dict]:
         if suffix == ".json":
             return json.loads(content)
