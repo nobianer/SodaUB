@@ -63,7 +63,7 @@ class LoaderMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "MODULES_REPO",
-                "https://github.com/psleiny/SodaLEiNY/raw/main/Modules/",
+                "https://github.com/psleiny/SodaModules/raw/main",
                 lambda: self.strings("repo_config_doc"),
                 validator=loader.validators.Link(),
             ),
