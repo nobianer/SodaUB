@@ -71,7 +71,7 @@ class LoaderMod(loader.Module):
                 "ADDITIONAL_REPOS",
                 # Currenly the trusted developers are specified
                 [
-                    "https://github.com/nobianer/Userbots-modules-UA/raw/main/modules",
+                    "https://github.com/nobianer/Userbots-modules-UA/raw/main",
                     "https://github.com/C0dwiz/H.Modules/raw/main",
                 ],
                 lambda: self.strings("add_repo_config_doc"),
