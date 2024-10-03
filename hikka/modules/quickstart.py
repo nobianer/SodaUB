@@ -25,7 +25,7 @@ class Quickstart(loader.Module):
             [
                 {
                     "text": self.strings("btn_support"),
-                    "url": "https://t.me/hikka_talks",
+                    "url": "https://t.me/SodaTalks",
                 }
             ],
         ] + utils.chunks(
