@@ -9,16 +9,21 @@ logger = logging.getLogger(__name__)
 
 imgs = [
     "https://i.gifer.com/3Oq7x.gif",
-    "https://i.gifer.com/3Oq80.gif",
+    "https://i.gifer.com/Afdn.gif",
+    "https://i.gifer.com/3uvT.gif",
+    "https://i.gifer.com/2qQQ.gif",
+    "https://i.gifer.com/Lym6.gif",
+    "https://i.gifer.com/IjT4.gif",
+    "https://i.gifer.com/A9H.gif",
 ]
 
-gif_lang_changed = "https://i.gifer.com/g0UF.gif"
+gif_lang_changed = "https://i.gifer.com/g0UF.gif"  # Додали новий гіф для зміни мови
 
 @loader.tds
 class Quickstart(loader.Module):
     """Notifies user about userbot installation"""
     strings = {
-        "name": "Quickstart",
+    "name": "Quickstart",
     }
 
     async def client_ready(self):
@@ -26,7 +31,7 @@ class Quickstart(loader.Module):
             [
                 {
                     "text": self.strings("btn_support"),
-                    "url": "https://t.me/SodaTalks",
+                    "url": "https://t.me/hikka_talks",
                 }
             ],
         ] + utils.chunks(
@@ -75,10 +80,7 @@ class Quickstart(loader.Module):
         self._db.set(translations.__name__, "lang", lang)
         await self.allmodules.reload_translations()
 
-        await self.inline.bot.send_animation(
-            call.chat.id, 
-            animation=gif_lang_changed, 
-            caption=self.strings("language_saved")
-        )
+        await self.inline.bot.send_animation(call.chat.id, animation=gif_lang_changed)
         
+        await call.answer(self.strings("language_saved"))
         await call.edit(text=self.text(), reply_markup=self.mark())
