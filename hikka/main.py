@@ -34,6 +34,7 @@ import logging
 import os
 import random
 import socket
+import requests
 import sqlite3
 import typing
 from getpass import getpass
@@ -89,13 +90,49 @@ IS_DOCKER = "DOCKER" in os.environ
 IS_RAILWAY = "RAILWAY" in os.environ
 IS_GOORM = "GOORM" in os.environ
 IS_LAVHOST = "LAVHOST" in os.environ
-IS_AMAZON = "Amazon" in os.environ
 IS_WSL = False
 with contextlib.suppress(Exception):
     from platform import uname
 
     if "microsoft-standard" in uname().release:
         IS_WSL = True
+
+import os
+import socket
+import requests
+import contextlib
+from pathlib import Path
+
+BASE_DIR = (
+    "/data"
+    if "DOCKER" in os.environ
+    else os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+
+BASE_PATH = Path(BASE_DIR)
+CONFIG_PATH = BASE_PATH / "config.json"
+
+IS_TERMUX = "com.termux" in os.environ.get("PREFIX", "")
+IS_CODESPACES = "CODESPACES" in os.environ
+IS_DOCKER = "DOCKER" in os.environ
+IS_RAILWAY = "RAILWAY" in os.environ
+IS_GOORM = "GOORM" in os.environ
+IS_LAVHOST = "LAVHOST" in os.environ
+IS_HIKKAHOST = "HIKKAHOST" in os.environ
+IS_ORACLE = "ORACLE_OS" in os.environ
+IS_SERV00 = "serv00" in socket.gethostname()
+
+IS_WSL = False
+with contextlib.suppress(Exception):
+    from platform import uname
+    if "microsoft-standard" in uname().release:
+        IS_WSL = True
+
+IS_AWS = False
+with contextlib.suppress(Exception):
+    response = requests.get("http://169.254.169.254/latest/meta-data/instance-id", timeout=2)
+    if response.status_code == 200:
+        IS_AWS = True
 
 # fmt: off
 LATIN_MOCK = [
