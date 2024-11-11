@@ -919,6 +919,9 @@ def get_named_platform() -> str:
 
     if main.IS_CODESPACES:
         return "🐈‍⬛ Codespaces"
+        
+    if main.IS_SERV00:
+        return "💎 Serv00"
 
     return f"✌️ lavHost {os.environ['LAVHOST']}" if main.IS_LAVHOST else "📻 VDS"
 
@@ -952,6 +955,9 @@ def get_platform_emoji() -> str:
 
     if main.IS_TERMUX:
         return BASE.format(5193051778001673828)
+        
+    if main.IS_SERV00:
+        return BASE.format(5192765204898783881)
 
     if main.IS_RAILWAY:
         return BASE.format(5199607521593007466)
